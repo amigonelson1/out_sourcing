@@ -9,7 +9,7 @@ import {HomeComponent} from './pages/home/home.component';
   imports: [
     CommonModule, 
     RouterOutlet,
-    HomeComponent
+    HomeComponent,    
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
