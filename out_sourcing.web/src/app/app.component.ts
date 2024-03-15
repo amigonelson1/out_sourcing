@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import {HomeComponent} from './pages/home/home.component';
+import {HomeComponent} from './home/home.component';
+import { MenuComponentComponent } from './menu-component/menu-component.component';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,8 @@ import {HomeComponent} from './pages/home/home.component';
   imports: [
     CommonModule, 
     RouterOutlet,
-    HomeComponent,    
+    HomeComponent,
+    MenuComponentComponent    
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
