@@ -27,37 +27,37 @@ export class MenuComponentComponent {
       {
         label: 'Archivo',
         icon: 'pi pi-fw pi-file',
-        items: [
-          {
-            label: 'Nuevo',
-            icon: 'pi pi-fw pi-plus',
-            // routerLinkActiveOptions: true,
-            // url: 'archivo', // para un link externo
-            routerLink:'archivo',
-            // command:() => this.navigate('archivo') // para agregar una función
-            // items: [
-            //   {
-            //     label: 'Marca de libro',
-            //     icon: 'pi pi-fw pi-bookmark'
-            //   },
-            //   {
-            //     label: 'Video',
-            //     icon: 'pi pi-fw pi-video'
-            //   }
-            // ]
-          },
-          {
-            label: 'Borrar',
-            icon: 'pi pi-fw pi-trash'
-          },
-          {
-            separator: true
-          },
-          {
-            label: 'Exportar',
-            icon: 'pi pi-fw pi-external-link'
-          }
-        ]
+        routerLink:'archivo',
+        // items: [
+        //   {
+        //     label: 'Nuevo',
+        //     icon: 'pi pi-fw pi-plus',
+        //     // routerLinkActiveOptions: true,
+        //     // url: 'archivo', // para un link externo
+        //     // command:() => this.navigate('archivo') // para agregar una función
+        //     // items: [
+        //     //   {
+        //     //     label: 'Marca de libro',
+        //     //     icon: 'pi pi-fw pi-bookmark'
+        //     //   },
+        //     //   {
+        //     //     label: 'Video',
+        //     //     icon: 'pi pi-fw pi-video'
+        //     //   }
+        //     // ]
+        //   },
+        //   {
+        //     label: 'Borrar',
+        //     icon: 'pi pi-fw pi-trash'
+        //   },
+        //   {
+        //     separator: true
+        //   },
+        //   {
+        //     label: 'Exportar',
+        //     icon: 'pi pi-fw pi-external-link'
+        //   }
+        // ]
       },
       // {
       //   label: 'Edit',
@@ -153,7 +153,6 @@ export class MenuComponentComponent {
   }
 
   navigate(route: string) {
-    console.log('Navegando a:', route);
     this.router.navigate([`/${route}`]);
   }
 

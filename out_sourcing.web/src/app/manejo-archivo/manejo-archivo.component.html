@@ -1,2 +1,19 @@
-<p>Manejo de Arvhivo</p>
+<h1>Cargar archivo para conversión</h1>
 
+<div>
+    <p-fileUpload name="demo[]" url="https://www.primefaces.org/cdn/api/upload.php" (onUpload)="onUpload($event)" [multiple]="true" accept="xlsx" [maxFileSize]="1000000">
+        <ng-template pTemplate="content">
+            @if(uploadedFiles.length){
+                <ul>
+                    @for(file of uploadedFiles; track file){
+                        <li>{{ file.name }} - {{ file.size }} bytes</li>
+                    }
+                </ul>
+            }
+        </ng-template>
+    </p-fileUpload>
+</div>
+
+<div class="endPosition">
+    <p-button icon="pi pi-undo" [rounded]="true" severity="help" (onClick)="backToHome()"></p-button>
+</div>
