@@ -1,7 +1,7 @@
 <h1>Cargar archivo para conversión</h1>
 
 <div>
-    <p-fileUpload name="demo[]" url="https://www.primefaces.org/cdn/api/upload.php" (onUpload)="onUpload($event)" [multiple]="true" accept="xlsx" [maxFileSize]="1000000">
+    <p-fileUpload name="demo[]" url="https://www.primefaces.org/cdn/api/upload.php" (onUpload)="onUpload($event)" [multiple]="true" accept=".xlsx, .xls, .csv" [maxFileSize]="1000000">
         <ng-template pTemplate="content">
             @if(uploadedFiles.length){
                 <ul>
